@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="52dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gambarlogin"
+        android:layout_width="223dp"
+        android:layout_height="264dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/store"
+        android:textStyle="bold"
+        android:layout_below="@+id/gambarlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:background="#ffffff"
+        android:text="Store"
+        android:textColor="@color/primary"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:spinnerMode="dropdown"
+        android:elevation="10dp"
+        android:background="@drawable/spinner_background"
+        android:layout_below="@+id/store"
+        android:entries="@array/spinner_items"/>
+
+    <TextView
+        android:id="@+id/your_name"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:background="#ffffff"
+        android:text="Your Name"
+        android:textColor="@color/primary"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/your_name"
+        android:textColorHint="#8A8A8A"
+        android:background="@drawable/background_text"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:hint="Please fill your name"
+        />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editname"
+        android:layout_gravity="center"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="#D52F2F"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        app:strokeColor="#F9B916"
+        app:strokeWidth="1dp"
+        />
+
+
+</RelativeLayout>

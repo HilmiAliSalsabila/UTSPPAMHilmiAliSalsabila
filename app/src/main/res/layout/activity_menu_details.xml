@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/imgfood_detail"
+            />
+
+        <TextView
+            android:id="@+id/title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepperoni Pizza"
+            android:textColor="@color/white"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="28sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rp 66.000,00"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:textSize="21sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                />
+            <TextView
+                android:id="@+id/detail_view"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepperoni pizza adalah pizza yang memiliki  topping daging pepperoni sapi asli. Di Italia, pepperoni disebut salame piccante (salami panas). Biasa menjadi bahan baku pizza di Amerika Serikat, yang sering mewakili 30% pelengkap. Pizza ini cocok untuk santap siang ataupun malam anda"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:textSize="19sp"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="315dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#D52F2F"
+            android:text="Order Now"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            app:cornerRadius="5dp"
+            app:strokeColor="#F9B916"
+            app:strokeWidth="1dp"
+            />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="315dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#D52F2F"
+            android:text="Back"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            app:cornerRadius="5dp"
+            app:strokeColor="#F9B916"
+            app:strokeWidth="1dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
